@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Яндекс Дом</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libs/owl_carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl_carousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+</head>
+<body>
+    <div class="smartHome">
+        <header>
+            <div class="header-container">
+                <div class="header__logo">
+                    <a href="#"><img src="./assets/Яндекс Дом@1x.png" alt="Яндекс Дом"></a>
+                </div>
+                <input type="checkbox" id="menu-checkbox">
+                <nav>
+                    <label for="menu-checkbox" class="toggle-button" onclick><span></span></label>
+                    <ul class="main-menu">
+                        <li><a href="#" class="active">Сводка</a></li>
+                        <li><a href="#">Устройства</a></li>
+                        <li><a href="#">Сценарии</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-fav">
+            <div class="main">
+                <h3>Главное</h3>
+                <div class="main__bg">
+                    <div class="main__info">
+                        <p class="main__greeting">Привет, Геннадий!</p>
+                        <p class="main__status">Двери и окна закрыты, сигнализация включена.</p>
+                        <div class="main__temp">
+                            <div class="main__home">
+                                <p>Дома</p>
+                                <p class="main__deg">+23</p>
+                            </div>
+                            <div class="main__outwin">
+                                <p>За окном</p>
+                                <p class="main__deg">+19</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="swiper-container main__list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide main__scen">
+                                    <span class="icon__temp"></span>
+                                    <div class="scen__info">
+                                        <p class="scen__name">Philips Cooler</p>
+                                        <p class="scen__time">Начнет охлаждать в 16:30</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main__scen">
+                                    <span class="icon__sun"></span>
+                                    <div class="scen__info">
+                                        <p class="scen__name">Xiaomi Yeelight LED Smart Bulb</p>
+                                        <p class="scen__time">Включится в 17:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="main__arrow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scens">
+                <div class="scens__top">
+                    <h3>Избранные сценарии</h3>
+                    <div class="scens__arrows">
+                        <button id="scens__prev"><</button>
+                        <button id="scens__next">></button>
+                    </div>
+                </div>
+                <div class="swiper-container scens__favs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide scens__card">
+                            <span class="icon__sun_2"></span>
+                            <div class="card__info">
+                                <p class="card__name">Выключить весь свет в доме и во дворе</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide scens__card">
+                            <span class="icon__shed"></span>
+                            <div class="card__info">
+                                <p class="card__name">Я ухожу</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide scens__card">
+                            <span class="icon__sun_2"></span>
+                            <div class="card__info">
+                                <p class="card__name">Включить свет в коридоре</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide scens__card">
+                            <span class="icon__temp_2"></span>
+                            <div class="card__info">
+                                <p class="card__name">Набрать горячую ванну</p>
+                                <p class="card__time">Начнётся в 18:00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide scens__card">
+                            <span class="icon__temp_2"></span>
+                            <div class="card__info">
+                                <p class="card__name">Сделать пол тёплым во всей квартире</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="devs">
+            <div class="devs__top">
+                <h3>Избранные устройства</h3>
+                <div class="devs__toggles">
+                    <button id="showall" class="active">Все</button>
+                    <button id="kitchen">Кухня</button>
+                    <button id="hall">Зал</button>
+                    <button id="lamps">Лампочки</button>
+                    <button id="cams">Камеры</button>
+                </div>
+                <div class="devs__arrows">
+                    <button id="devs__prev"><</button>
+                    <button id="devs__next">></button>
+                </div>
+            </div>
+            <div class="swiper-container devs__gallery">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide main__scen lamps kitchen">
+                            <span class="icon__sun_2"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">Xiaomi Yeelight LED Smart Bulb</p>
+                                <p class="scen__time">Включено</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen lamps hall">
+                            <span class="icon__sun"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">D-Link Omna 180 Cam</p>
+                                <p class="scen__time">Включится в 17:00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen hall">
+                            <span class="icon__temp"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">Elgato Eve Degree Connected</p>
+                                <p class="scen__time">Включено до 17:00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen lamps kitchen">
+                            <span class="icon__sun"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">LIFX Mini Day & Dusk A60 E27</p>
+                                <p class="scen__time">Включится в 17:00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen lamps hall">
+                            <span class="icon__sun_2"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">Xiaomi Mi Air Purifier 2S</p>
+                                <p class="scen__time">Включено</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen lamps kitchen">
+                            <span class="icon__sun"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">Philips Zhirui</p>
+                                <p class="scen__time">Включено</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main__scen lamps hall">
+                            <span class="icon__sun_2"></span>
+                            <div class="scen__info">
+                                <p class="scen__name">Xiaomi Mi Air Purifier 2S</p>
+                                <p class="scen__time">Включено</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <a href="#">Помощь</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Разработчикам</a>
+        <a href="#">Условия использования</a>
+        <span>© 2001–2017  ООО «Яндекс»</span>
+    </div>
+
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/swiper/js/swiper.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
