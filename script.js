@@ -1,3 +1,4 @@
+// Фильтр устройств
 $(function () {
     $('.devs__toggles button').not('#showall').click(function() {
         if(!$(this).hasClass('active')) {
