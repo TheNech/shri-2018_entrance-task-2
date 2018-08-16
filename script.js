@@ -75,9 +75,3 @@ var main__swiper = new Swiper ('.main__list', {
         }
     }
 });
-
-$(window).resize(function() {
-    setTimeout(function() {
-        scens__swiper.update();
-    }, 10);
-});

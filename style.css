@@ -67,6 +67,7 @@ nav a.active {
 .main-fav {
     display: grid;
     grid-template-columns: 50% 50%;
+    /* grid-column-gap: 26px; */
     margin-left: 3%;
     margin-top: 19px;
 }
@@ -78,6 +79,7 @@ nav a.active {
 }
 .main__bg {
     width: 630px;
+    /* width: 100%; */
     height: 331px;
     margin-top: 16px;
     background-image: url(assets/bg@1x.png);
@@ -230,8 +232,11 @@ nav a.active {
     cursor: pointer;
     outline: none;
 }
-button#scens__next {
-    margin-left: 5px;;
+#scens__next {
+    margin-left: 19px;
+}
+#scens__next img {
+    transform: rotate(180deg);
 }
 
 .scens__favs {
@@ -343,8 +348,11 @@ button#scens__next {
     cursor: pointer;
     outline: none;
 }
-button#devs__next {
-    margin-left: 5px;;
+#devs__next {
+    margin-left: 19px;
+}
+#devs__next img {
+    transform: rotate(180deg);
 }
 
 .devs__gallery {
